@@ -3,6 +3,10 @@ class Nave{
 	var direccion //-10,0,10
 	var combustible // lts
 
+        method initialize(){
+               if (not direccion.between(-10,10){
+                   self.error("error de inicializacion")
+               }
 	method acelerar(cuanto){velocidad = 0.max(velocidad+cuanto).min(100000)}
 	method desacelerar(cuanto){velocidad -= 0.max(velocidad-cuanto).min(100000)}
 	method irHaciaElSol(){direccion = 10}
