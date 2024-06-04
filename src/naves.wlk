@@ -13,7 +13,7 @@ class Nave{
 	method escaparDelSol(){direccion = -10}
 	method ponerseParaleloAlSol(){direccion = 0}
 	method acercarseUnPocoAlSol(){direccion = 10.min(direccion+1)}
-	method alejarseUnPocoAlSol(){direccion = -10.max(direccion-1)}
+	method alejarseUnPocoAlSol(){direccion = (-10).max(direccion-1)}
 	method prepararViaje(){
 		self.cargarCombustible(30000)
 		self.acelerar(5000)
