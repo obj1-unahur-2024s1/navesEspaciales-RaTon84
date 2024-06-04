@@ -21,8 +21,8 @@ class Nave{
 		self.escapar()
 		self.avisar()
 	}
-	method escapar(){}
-	method avisar(){}
+	method escapar()
+	method avisar()
 	method estaDeRelajo(){
 		return self.estaTranquila()
 	}
