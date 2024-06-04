@@ -69,8 +69,8 @@ class NavePasajeros inherits Nave{
 	method descargarBebida(raciones){bebida+=raciones}
 	override method prepararViaje(){
 		super()
-		self.cargarComida(4)
-		self.cargarBebida(6)
+		self.cargarComida(4*pasajeros)
+		self.cargarBebida(6*pasajeros)
 		self.acercarseUnPocoAlSol()
 	}
 	override method escapar(){self.acelerar(self.velocidad())}
